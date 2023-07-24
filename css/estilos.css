@@ -4,7 +4,7 @@
     justify-content: space-between;
 }
 .navbar{
-    box-shadow: 0px 6px 12px 0px rgba(38, 182, 182, 0.82), rgba(236, 233, 17, 0.82), rgba(236, 12, 180, 0.82);
+    box-shadow: 0px 6px 12px 0px rgba(38, 182, 182, 0.82);
 }
 .text-green{
     color: rgb(15, 169, 15) !important;

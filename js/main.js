@@ -20,19 +20,33 @@ function calcPrecio(e){
         cantSelec = e.target.value : 
         catSelec = e.target.value;
     
-    precio = (cantSelec * 200);
+    precio = (cantSelec * 1000);
 
     switch(catSelec){
-        case 'estudiante':
-            precio *= 0.2;
+        case 'ciclista':/*cambie estudiante por ciclista */
+            precio *= 0.39;
             break;
-        case 'trainee':
-            precio *= 0.5;
-        
-            break;
-        case 'junior':
-            precio *= .85;
+            case 'ciclista1m':
+                precio *= 1.785;
+            break;   
+            case 'ciclista1a':
+            precio *= 15.245;
         break;
+        case 'turistaU':
+            precio *= 0.7;
+            break;
+            case 'turista1d':
+            precio *= 4.900;
+            break;
+            case 'turista3d':
+            precio *= 4.900;
+            break;
+            case 'turista7d':
+            precio *= 5.900;
+            break;
+            case 'free':
+                precio *= .0;
+                break;
         default:
             break;
     }
@@ -86,7 +100,7 @@ function borrarForm(){
     total.innerHTML = "";
 }
 
-/*caretl de alert */
+/*cartel de alert */
 function handleSubmit(e){
 e.preventDefault
     Swal.fire({
